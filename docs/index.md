@@ -6,6 +6,6 @@ layout: home
 ---
 Hello, world. 
 
-This is my bear
+This is my bear!
 
-![kiwi](/images/kiwi.png)
+![kiwi](/docs/img/kiwi.png)
