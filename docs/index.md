@@ -6,4 +6,4 @@ layout: home
 ---
 Hello, world. 
 
-![kiwi](/images/kiwi.png)
+![kiwi](https://github.com/carbonatezero/carbonatezero.github.io/blob/gh-pages/images/kiwi.png)
