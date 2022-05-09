@@ -1,6 +1,8 @@
 ---
 layout: page
-title: HELLO
-permalink: /hello/
+title: Teaching
+permalink: /teaching/
 ---
-hello page.
+
+
+**Teaching Experiences**
