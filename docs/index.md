@@ -6,7 +6,7 @@ layout: home
 ---
 Hello, world. 
 
-![kiwi](/docs/_draft/kiwi.png){:class="img-responsive"}
+[![kiwi](/docs/_draft/kiwi.png)](https://carbonatezero.github.io/)
 
 <ul>
 <li  markdown="1">
