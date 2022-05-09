@@ -6,4 +6,4 @@ layout: home
 ---
 Hello, world. 
 
-![image-title-here](/_draft/kiwi){:class="img-responsive"}
+![image-title-here](/docs/_draft/kiwi.png)
