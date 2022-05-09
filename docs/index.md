@@ -4,4 +4,4 @@
 
 layout: home
 ---
-Hello, hello, hello. 
+Hello, world. 
