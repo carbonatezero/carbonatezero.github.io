@@ -6,4 +6,10 @@ layout: home
 ---
 Hello, world. 
 
-![image-title-here](/docs/_draft/kiwi.png)
+
+
+<ul>
+<li  markdown="1">
+![kiwi](/docs/_draft/kiwi.png)
+</li>
+</ul>
