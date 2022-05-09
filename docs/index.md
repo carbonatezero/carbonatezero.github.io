@@ -6,10 +6,5 @@ layout: home
 ---
 Hello, world. 
 
-[![kiwi](/docs/_draft/kiwi.png)](https://carbonatezero.github.io/)
+![kiwi](/images/kiwi.png)
 
-<ul>
-<li  markdown="1">
-![kiwi](/docs/_draft/kiwi.png)
-</li>
-</ul>
