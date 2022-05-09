@@ -8,4 +8,4 @@ Hello, world.
 
 This is my bear.
 
-![kiwi](/docs/img/kiwi.png)
+![kiwi](/img/kiwi.png)
