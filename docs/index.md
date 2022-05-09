@@ -7,4 +7,3 @@ layout: home
 Hello, world. 
 
 ![kiwi](/images/kiwi.png)
-
