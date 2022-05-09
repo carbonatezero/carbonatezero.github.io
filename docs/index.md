@@ -6,7 +6,7 @@ layout: home
 ---
 Hello, world. 
 
-
+![kiwi](/docs/_draft/kiwi.png){:class="img-responsive"}
 
 <ul>
 <li  markdown="1">
