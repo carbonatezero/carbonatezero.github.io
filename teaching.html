@@ -1,137 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Teaching Experience</title>
-    <style>
-      :root {
-        --color-fg-default: #24292f;
-        --color-fg-muted: #57606a;
-        --color-accent-fg: #0969da;
-        --color-border-default: #d0d7de;
-        --color-bg-default: #ffffff;
-      }
-      html { box-sizing: border-box; font-size: 16px; }
-      *, *::before, *::after { box-sizing: inherit; }
-      body {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji","Segoe UI Emoji";
-        font-size: 16px; line-height: 1.5;
-        color: var(--color-fg-default);
-        background: var(--color-bg-default);
-        -webkit-font-smoothing: antialiased;
-      }
-      header, main, footer { max-width: 860px; margin: 0 auto; padding: 24px 32px; }
-      header { padding-top: 40px; padding-bottom: 8px; }
-      h1, h2, h3 { font-weight: 600; line-height: 1.25; margin-top: 32px; margin-bottom: 16px; }
-      h1 { font-size: 2em; margin-top: 0; }
-      h2 { font-size: 1.5em; border-bottom: 1px solid var(--color-border-default); padding-bottom: 4px; }
-      h3 { font-size: 1.25em; }
-      ul { list-style: none; margin: 0 0 16px 0; padding: 0; }
-      li + li { margin-top: 6px; }
-
-      /* Flex alignment: course left, term right */
-      .teaching-list li {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        gap: 12px;
-        border-bottom: 1px dashed #e5e7eb;
-        padding: 4px 0;
-      }
-      .course { flex: 1 1 auto; min-width: 40%; }
-      .term { flex: 0 0 auto; color: var(--color-fg-muted); white-space: nowrap; font-size: 0.95em; text-align: right; }
-
-      .course a {
-        font-size: 0.75em;
-        background: #0969da15;
-        color: #0969da;
-        padding: 2px 6px;
-        border-radius: 12px;
-        text-decoration: none;
-        border: 1px solid #0969da33;
-        margin-left: 6px;
-      }
-      .course a:hover { background: #0969da22; }
-
-      footer { font-size: 13px; color: var(--color-fg-muted); border-top: 1px solid var(--color-border-default); margin-top: 48px; text-align: center; }
-      section + section { margin-top: 40px; }
-      @media (max-width: 600px) {
-        header, main, footer { padding: 20px 16px; }
-        .term { white-space: normal; }
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Teaching Experience</h1>
-    </header>
-
-    <main>
-      <section>
-        <h2>Rose-Hulman Institute of Technology <span style="font-weight:400;">&mdash; Instructor</span></h2>
-        <ul class="teaching-list">
-          <li><span class="course">MA371 &mdash; Linear Algebra <a href="/teaching/linear-algebra/notes/notes_LinearAlgebra.pdf" title="MA371 Notes (PDF)">(Notes)</a></span><span class="term">Spring 2024, Spring 2025</span></li>
-          <li><span class="course">MA221 &mdash; Differential Equations I</span><span class="term">Fall 2024, Spring 2025, Fall 2025</span></li>
-          <li><span class="course">MA222 &mdash; Differential Equations II</span><span class="term">Winter 2023, Spring 2024, Fall 2024, Winter 2024, Fall 2025</span></li>
-          <li><span class="course">MA112 &mdash; Calculus II</span><span class="term">Fall 2023, Winter 2023, Winter 2024</span></li>
+<head>
+  <meta charset="utf-8" />
+  <title>Teaching</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <h1 class="site-title">Teaching</h1>
+      <nav aria-label="Primary site navigation">
+        <ul class="site-nav">
+          <li><a href="about.html">About</a></li>
+          <li><a href="teaching.html" class="nav-active" aria-current="page">Teaching</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="notes.html">Notes</a></li>
         </ul>
-      </section>
+      </nav>
+    </div>
+  </header>
 
-      <section>
-        <h2>Florida State University <span style="font-weight:400;">&mdash; Instructor</span></h2>
-        <ul class="teaching-list">
-          <li><span class="course">MAC 2313 &mdash; Calculus III</span><span class="term">Fall 2022, Spring 2022</span></li>
-          <li><span class="course">MAC 2312 &mdash; Calculus II</span><span class="term">Fall 2020 – Spring 2023</span></li>
-        </ul>
-      </section>
+  <main class="site-main" id="content">
+    <section class="section">
+      <h2>Rose-Hulman Institute of Technology <span style="font-weight:400;">&mdash; Instructor</span></h2>
+      <ul class="teaching-list">
+        <li><span class="course">MA371 &mdash; Linear Algebra <a href="/teaching/linear-algebra/notes/notes_LinearAlgebra.pdf" title="MA371 Notes (PDF)">(Notes)</a></span><span class="term">Spring 2024, Spring 2025</span></li>
+        <li><span class="course">MA221 &mdash; Differential Equations I</span><span class="term">Fall 2024, Spring 2025, Fall 2025</span></li>
+        <li><span class="course">MA222 &mdash; Differential Equations II</span><span class="term">Winter 2023, Spring 2024, Fall 2024, Winter 2024, Fall 2025</span></li>
+        <li><span class="course">MA112 &mdash; Calculus II</span><span class="term">Fall 2023, Winter 2023, Winter 2024</span></li>
+      </ul>
+    </section>
 
-      <section>
-        <h2>Indiana University</h2>
+    <section class="section">
+      <h2>Florida State University <span style="font-weight:400;">&mdash; Instructor</span></h2>
+      <ul class="teaching-list">
+        <li><span class="course">MAC 2313 &mdash; Calculus III</span><span class="term">Fall 2022, Spring 2022</span></li>
+        <li><span class="course">MAC 2312 &mdash; Calculus II</span><span class="term">Fall 2020 – Spring 2023</span></li>
+      </ul>
+    </section>
 
-        <h3>Mentor</h3>
-        <ul class="teaching-list">
-          <li><span class="course">Directed Reading Program &mdash; Stochastic Calculus in Finance</span><span class="term">Fall 2019</span></li>
-          <li><span class="course">Directed Reading Program &mdash; Measure Theory and Stochastic Processes</span><span class="term">Spring 2019</span></li>
-        </ul>
+    <section class="section">
+      <h2>Indiana University</h2>
 
-        <h3>Instructor</h3>
-        <ul class="teaching-list">
-          <li><span class="course">M014 &mdash; College Algebra</span><span class="term">Fall 2019</span></li>
-        </ul>
+      <h3>Mentor</h3>
+      <ul class="teaching-list">
+        <li><span class="course">Directed Reading Program &mdash; Stochastic Calculus in Finance</span><span class="term">Fall 2019</span></li>
+        <li><span class="course">Directed Reading Program &mdash; Measure Theory and Stochastic Processes</span><span class="term">Spring 2019</span></li>
+      </ul>
 
-        <h3>Associate Instructor <span style="font-weight:400;">(Recitations &amp; Grading)</span></h3>
-        <ul class="teaching-list">
-          <li><span class="course">M212 &mdash; Calculus II</span><span class="term">Fall 2018</span></li>
-          <li><span class="course">M211 &mdash; Calculus I</span><span class="term">Fall 2014, Fall 2016</span></li>
-          <li><span class="course">M464 &mdash; Probability Theory II</span><span class="term">Spring 2017, Spring 2018</span></li>
-          <li><span class="course">M471 &mdash; Numerical Analysis I</span><span class="term">Fall 2013, Fall 2017</span></li>
-          <li><span class="course">M513 &mdash; Complex Analysis I</span><span class="term">Fall 2017</span></li>
-          <li><span class="course">M415 &mdash; Elementary Complex Variables</span><span class="term">Spring 2016, Spring 2017</span></li>
-          <li><span class="course">M441 &mdash; Partial Differential Equations I</span><span class="term">Fall 2016</span></li>
-          <li><span class="course">M409 &mdash; Linear Algebra</span><span class="term">Summer 2016</span></li>
-          <li><span class="course">M414 &mdash; Introduction to Analysis II</span><span class="term">Spring 2016</span></li>
-          <li><span class="course">M413 &mdash; Introduction to Analysis I</span><span class="term">Fall 2015</span></li>
-          <li><span class="course">M405 &mdash; Number Theory</span><span class="term">Summer 2015</span></li>
-          <li><span class="course">M365 &mdash; Introduction to Probability and Statistics</span><span class="term">Spring 2015</span></li>
-          <li><span class="course">M344 &mdash; Introduction to Differential Equations II</span><span class="term">Spring 2014, Spring 2019</span></li>
-          <li><span class="course">M303 &mdash; Linear Algebra</span><span class="term">Fall 2013</span></li>
-        </ul>
-      </section>
+      <h3>Instructor</h3>
+      <ul class="teaching-list">
+        <li><span class="course">M014 &mdash; College Algebra</span><span class="term">Fall 2019</span></li>
+      </ul>
 
-      <section>
-        <h2>Illinois Institute of Technology <span style="font-weight:400;">&mdash; Teaching Assistant</span></h2>
-        <ul class="teaching-list">
-          <li><span class="course">M474 &mdash; Probability and Statistics</span><span class="term">2012</span></li>
-          <li><span class="course">M501 &mdash; Applied Analysis</span><span class="term">2012</span></li>
-          <li><span class="course">M252 &mdash; Introduction to Differential Equations</span><span class="term">2011</span></li>
-        </ul>
-      </section>
-    </main>
+      <h3>Associate Instructor <span style="font-weight:400;">(Recitations &amp; Grading)</span></h3>
+      <ul class="teaching-list">
+        <li><span class="course">M212 &mdash; Calculus II</span><span class="term">Fall 2018</span></li>
+        <li><span class="course">M211 &mdash; Calculus I</span><span class="term">Fall 2014, Fall 2016</span></li>
+        <li><span class="course">M464 &mdash; Probability Theory II</span><span class="term">Spring 2017, Spring 2018</span></li>
+        <li><span class="course">M471 &mdash; Numerical Analysis I</span><span class="term">Fall 2013, Fall 2017</span></li>
+        <li><span class="course">M513 &mdash; Complex Analysis I</span><span class="term">Fall 2017</span></li>
+        <li><span class="course">M415 &mdash; Elementary Complex Variables</span><span class="term">Spring 2016, Spring 2017</span></li>
+        <li><span class="course">M441 &mdash; Partial Differential Equations I</span><span class="term">Fall 2016</span></li>
+        <li><span class="course">M409 &mdash; Linear Algebra</span><span class="term">Summer 2016</span></li>
+        <li><span class="course">M414 &mdash; Introduction to Analysis II</span><span class="term">Spring 2016</span></li>
+        <li><span class="course">M413 &mdash; Introduction to Analysis I</span><span class="term">Fall 2015</span></li>
+        <li><span class="course">M405 &mdash; Number Theory</span><span class="term">Summer 2015</span></li>
+        <li><span class="course">M365 &mdash; Introduction to Probability and Statistics</span><span class="term">Spring 2015</span></li>
+        <li><span class="course">M344 &mdash; Introduction to Differential Equations II</span><span class="term">Spring 2014, Spring 2019</span></li>
+        <li><span class="course">M303 &mdash; Linear Algebra</span><span class="term">Fall 2013</span></li>
+      </ul>
+    </section>
 
-    <footer>
-      <p>&copy; 2025 Yu Cao. All rights reserved.</p>
-    </footer>
-  </body>
+    <section class="section">
+      <h2>Illinois Institute of Technology <span style="font-weight:400;">&mdash; Teaching Assistant</span></h2>
+      <ul class="teaching-list">
+        <li><span class="course">M474 &mdash; Probability and Statistics</span><span class="term">2012</span></li>
+        <li><span class="course">M501 &mdash; Applied Analysis</span><span class="term">2012</span></li>
+        <li><span class="course">M252 &mdash; Introduction to Differential Equations</span><span class="term">2011</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <p class="small">&copy; 2025 Yu Cao. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
 </html>
