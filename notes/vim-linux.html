@@ -1,220 +1,195 @@
-<h1 id="vim-and-linux-quick-reference">Vim and Linux Quick Reference</h1>
-<p>Commonly used Vim commands and a few essential Linux operations.</p>
-<hr />
-<h3 id="compression">Compression</h3>
-<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tar</span> <span class="at">-czvf</span> archive.tar.gz my_directory    <span class="co"># Compress</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">tar</span> <span class="at">-xzvf</span> archive.tar.gz                 <span class="co"># Extract</span></span></code></pre></div>
-<hr />
-<h3 id="exiting">Exiting</h3>
-<table>
-<thead>
-<tr class="header">
-<th>Command</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>:q</code></td>
-<td>Quit</td>
-</tr>
-<tr class="even">
-<td><code>:q!</code></td>
-<td>Quit without saving</td>
-</tr>
-<tr class="odd">
-<td><code>:w</code></td>
-<td>Save</td>
-</tr>
-<tr class="even">
-<td><code>:wq</code></td>
-<td>Save and quit</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="cursor-movement">Cursor Movement</h3>
-<table>
-<thead>
-<tr class="header">
-<th>Command</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>h</code> <code>j</code> <code>k</code> <code>l</code></td>
-<td>Arrow keys (left, down, up, right)</td>
-</tr>
-<tr class="even">
-<td><code>Ctrl+f</code> / <code>Ctrl+b</code></td>
-<td>Page forward / backward</td>
-</tr>
-<tr class="odd">
-<td><code>Ctrl+d</code> / <code>Ctrl+u</code></td>
-<td>Move down / up half a page</td>
-</tr>
-<tr class="even">
-<td><code>G</code></td>
-<td>Go to bottom of file</td>
-</tr>
-<tr class="odd">
-<td><code>gg</code></td>
-<td>Go to top of file</td>
-</tr>
-<tr class="even">
-<td><code>{</code> / <code>}</code></td>
-<td>Move forward / backward by paragraph</td>
-</tr>
-<tr class="odd">
-<td><code>Ctrl+e</code> / <code>Ctrl+y</code></td>
-<td>Scroll down / up one line</td>
-</tr>
-<tr class="even">
-<td><code>0</code></td>
-<td>Start of line</td>
-</tr>
-<tr class="odd">
-<td><code>^</code></td>
-<td>First non-blank character of line</td>
-</tr>
-<tr class="even">
-<td><code>$</code></td>
-<td>End of line</td>
-</tr>
-<tr class="odd">
-<td><code>%</code></td>
-<td>Jump between matching <code>()</code> or <code>{}</code></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="editing">Editing</h3>
-<table>
-<thead>
-<tr class="header">
-<th>Command</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>u</code></td>
-<td>Undo</td>
-</tr>
-<tr class="even">
-<td><code>Ctrl+r</code></td>
-<td>Redo</td>
-</tr>
-<tr class="odd">
-<td><code>i</code> / <code>a</code></td>
-<td>Insert mode before / after cursor</td>
-</tr>
-<tr class="even">
-<td><code>I</code> / <code>A</code></td>
-<td>Insert mode at start / end of line</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="visual-mode-selecting-text">Visual Mode (Selecting Text)</h3>
-<table>
-<thead>
-<tr class="header">
-<th>Command</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>v</code></td>
-<td>Character-wise selection</td>
-</tr>
-<tr class="even">
-<td><code>V</code></td>
-<td>Line-wise selection</td>
-</tr>
-<tr class="odd">
-<td><code>Ctrl+v</code></td>
-<td>Block-wise selection</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="clipboard">Clipboard</h3>
-<table>
-<thead>
-<tr class="header">
-<th>Command</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>y</code></td>
-<td>Yank (copy) selected text</td>
-</tr>
-<tr class="even">
-<td><code>p</code></td>
-<td>Paste after cursor</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="deletion">Deletion</h3>
-<table>
-<thead>
-<tr class="header">
-<th>Command</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>d</code></td>
-<td>Delete (cut)</td>
-</tr>
-<tr class="even">
-<td><code>x</code></td>
-<td>Delete one character</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="search-and-replace">Search and Replace</h3>
-<table>
-<thead>
-<tr class="header">
-<th>Command</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>:%s/&lt;old&gt;/&lt;new&gt;/g</code></td>
-<td>Replace all <code>&lt;old&gt;</code> with <code>&lt;new&gt;</code> in file</td>
-</tr>
-<tr class="even">
-<td><code>:%s/&lt;old&gt;/&lt;new&gt;/gc</code></td>
-<td>Replace all with confirmation</td>
-</tr>
-<tr class="odd">
-<td><code>/&lt;text&gt;</code></td>
-<td>Search forward for <code>&lt;text&gt;</code></td>
-</tr>
-<tr class="even">
-<td><code>?&lt;text&gt;</code></td>
-<td>Search backward for <code>&lt;text&gt;</code></td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h3 id="commenting-out-blocks">Commenting Out Blocks</h3>
-<ol type="1">
-<li>Press <code>Esc</code> to exit insert mode.</li>
-<li>Press <code>Ctrl+v</code> to enter <strong>visual block mode</strong>.</li>
-<li>Use <code>j</code> / <code>k</code> to select the lines.</li>
-<li>Press <code>Shift+i</code> (capital <code>I</code>).</li>
-<li>Type your comment prefix (e.g. <code>%</code>).</li>
-<li>Press <code>Esc</code> twice.</li>
-</ol>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Vim & Linux Quick Reference</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Adjust href if this file is not under /notes/ -->
+  <link rel="stylesheet" href="../assets/styles.css">
+  <style>
+    /* Minimal helpers in case your site CSS doesn't cover these */
+    main { max-width: 900px; margin: 0 auto; padding: 1.5rem; }
+    h1, h2, h3 { line-height: 1.2; }
+    hr { border: 0; border-top: 1px solid #ddd; margin: 2rem 0; }
+    pre { overflow-x: auto; padding: 0.75rem; background: #f6f8fa; border-radius: 6px; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+    th, td { border: 1px solid #e5e7eb; padding: 0.5rem 0.6rem; text-align: left; vertical-align: top; }
+    thead th { background: #fafafa; }
+    .muted { color: #6b7280; font-size: 0.95rem; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <h1 class="site-title">Notes</h1>
+      <nav aria-label="Primary site navigation">
+        <ul class="site-nav">
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../teaching.html">Teaching</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../notes.html" class="nav-active" aria-current="page">Notes</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="site-main">
+    <article class="note-content">
+      <header>
+        <h1>Vim and Linux Quick Reference</h1>
+        <p class="muted">Commonly used Vim commands and a few essential Linux operations.</p>
+      </header>
+
+      <hr>
+
+      <section id="compression">
+        <h3>Compression</h3>
+        <pre><code class="language-bash">tar -czvf archive.tar.gz my_directory    # Compress
+tar -xzvf archive.tar.gz                 # Extract</code></pre>
+      </section>
+
+      <hr>
+
+      <section id="exiting">
+        <h3>Exiting</h3>
+        <table>
+          <thead>
+            <tr><th>Command</th><th>Description</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>:q</code></td><td>Quit</td></tr>
+            <tr><td><code>:q!</code></td><td>Quit without saving</td></tr>
+            <tr><td><code>:w</code></td><td>Save</td></tr>
+            <tr><td><code>:wq</code></td><td>Save and quit</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <hr>
+
+      <section id="cursor-movement">
+        <h3>Cursor Movement</h3>
+        <table>
+          <thead>
+            <tr><th>Command</th><th>Description</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>h</code> <code>j</code> <code>k</code> <code>l</code></td><td>Arrow keys (left, down, up, right)</td></tr>
+            <tr><td><code>Ctrl+f</code> / <code>Ctrl+b</code></td><td>Page forward / backward</td></tr>
+            <tr><td><code>Ctrl+d</code> / <code>Ctrl+u</code></td><td>Move down / up half a page</td></tr>
+            <tr><td><code>G</code></td><td>Go to bottom of file</td></tr>
+            <tr><td><code>gg</code></td><td>Go to top of file</td></tr>
+            <tr><td><code>{</code> / <code>}</code></td><td>Move forward / backward by paragraph</td></tr>
+            <tr><td><code>Ctrl+e</code> / <code>Ctrl+y</code></td><td>Scroll down / up one line</td></tr>
+            <tr><td><code>0</code></td><td>Start of line</td></tr>
+            <tr><td><code>^</code></td><td>First non-blank character of line</td></tr>
+            <tr><td><code>$</code></td><td>End of line</td></tr>
+            <tr><td><code>%</code></td><td>Jump between matching <code>()</code> or <code>{}</code></td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <hr>
+
+      <section id="editing">
+        <h3>Editing</h3>
+        <table>
+          <thead>
+            <tr><th>Command</th><th>Description</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>u</code></td><td>Undo</td></tr>
+            <tr><td><code>Ctrl+r</code></td><td>Redo</td></tr>
+            <tr><td><code>i</code> / <code>a</code></td><td>Insert mode before / after cursor</td></tr>
+            <tr><td><code>I</code> / <code>A</code></td><td>Insert mode at start / end of line</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <hr>
+
+      <section id="visual-mode">
+        <h3>Visual Mode (Selecting Text)</h3>
+        <table>
+          <thead>
+            <tr><th>Command</th><th>Description</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>v</code></td><td>Character-wise selection</td></tr>
+            <tr><td><code>V</code></td><td>Line-wise selection</td></tr>
+            <tr><td><code>Ctrl+v</code></td><td>Block-wise selection</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <hr>
+
+      <section id="clipboard">
+        <h3>Clipboard</h3>
+        <table>
+          <thead>
+            <tr><th>Command</th><th>Description</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>y</code></td><td>Yank (copy) selected text</td></tr>
+            <tr><td><code>p</code></td><td>Paste after cursor</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <hr>
+
+      <section id="deletion">
+        <h3>Deletion</h3>
+        <table>
+          <thead>
+            <tr><th>Command</th><th>Description</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>d</code></td><td>Delete (cut)</td></tr>
+            <tr><td><code>x</code></td><td>Delete one character</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <hr>
+
+      <section id="search-and-replace">
+        <h3>Search and Replace</h3>
+        <table>
+          <thead>
+            <tr><th>Command</th><th>Description</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><code>:%s/&lt;old&gt;/&lt;new&gt;/g</code></td><td>Replace all <code>&lt;old&gt;</code> with <code>&lt;new&gt;</code> in file</td></tr>
+            <tr><td><code>:%s/&lt;old&gt;/&lt;new&gt;/gc</code></td><td>Replace all with confirmation</td></tr>
+            <tr><td><code>/&lt;text&gt;</code></td><td>Search forward for <code>&lt;text&gt;</code></td></tr>
+            <tr><td><code>?&lt;text&gt;</code></td><td>Search backward for <code>&lt;text&gt;</code></td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <hr>
+
+      <section id="commenting-blocks">
+        <h3>Commenting Out Blocks</h3>
+        <ol>
+          <li>Press <code>Esc</code> to exit insert mode.</li>
+          <li>Press <code>Ctrl+v</code> to enter <strong>visual block mode</strong>.</li>
+          <li>Use <code>j</code> / <code>k</code> to select the lines.</li>
+          <li>Press <code>Shift+i</code> (capital <code>I</code>).</li>
+          <li>Type your comment prefix (e.g. <code>% </code>).</li>
+          <li>Press <code>Esc</code> twice.</li>
+        </ol>
+      </section>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <p class="small">&copy; 2025 Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
