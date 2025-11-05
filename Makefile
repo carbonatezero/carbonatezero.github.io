@@ -1,0 +1,5 @@
+.PHONY: fix-nav
+
+fix-nav:
+	python tools/remove_inner_nav.py
+	git status -sb
