@@ -28,6 +28,31 @@
                 margin: 0 auto;
                 padding: 24px 32px;
             }
+            .global-nav {
+                background: var(--color-bg-default);
+                border-bottom: 1px solid var(--color-border-default);
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+            }
+            .global-nav-inner {
+                max-width: 860px;
+                margin: 0 auto;
+                padding: 16px 32px;
+                display: flex;
+                gap: 16px;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            .global-nav-link {
+                color: var(--color-fg-default);
+                font-weight: 600;
+            }
+            .global-nav-link:hover,
+            .global-nav-link:focus {
+                color: var(--color-accent-fg);
+                text-decoration: underline;
+            }
             header { padding-top: 40px; padding-bottom: 8px; }
             h1, h2 {
                 font-weight: 600;
@@ -59,6 +84,15 @@
         </style>
     </head>
     <body>
+        <nav class="global-nav" aria-label="Global site navigation">
+            <div class="global-nav-inner">
+                <a class="global-nav-link" href="/">Home</a>
+                <a class="global-nav-link" href="/about.html">About</a>
+                <a class="global-nav-link" href="/teaching.html">Teaching</a>
+                <a class="global-nav-link" href="/projects.html">Projects</a>
+                <a class="global-nav-link" href="/notes.html">Notes</a>
+            </div>
+        </nav>
         <header>
             <h1>Other Pages</h1>
         </header>
