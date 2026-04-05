@@ -1,108 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Other Pages</title>
-        <style>
-            :root {
-                --color-fg-default: #24292f;
-                --color-fg-muted: #57606a;
-                --color-accent-fg: #0969da;
-                --color-border-default: #d0d7de;
-                --color-bg-default: #ffffff;
-            }
-            html { box-sizing: border-box; font-size: 16px; }
-            *, *::before, *::after { box-sizing: inherit; }
-            body {
-                margin: 0;
-                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji","Segoe UI Emoji";
-                font-size: 16px;
-                line-height: 1.5;
-                color: var(--color-fg-default);
-                background: var(--color-bg-default);
-                -webkit-font-smoothing: antialiased;
-            }
-            header, main, footer {
-                max-width: 860px;
-                margin: 0 auto;
-                padding: 24px 32px;
-            }
-            .global-nav {
-                background: var(--color-bg-default);
-                border-bottom: 1px solid var(--color-border-default);
-                position: sticky;
-                top: 0;
-                z-index: 1000;
-            }
-            .global-nav-inner {
-                max-width: 860px;
-                margin: 0 auto;
-                padding: 16px 32px;
-                display: flex;
-                gap: 16px;
-                align-items: center;
-                flex-wrap: wrap;
-            }
-            .global-nav-link {
-                color: var(--color-fg-default);
-                font-weight: 600;
-            }
-            .global-nav-link:hover,
-            .global-nav-link:focus {
-                color: var(--color-accent-fg);
-                text-decoration: underline;
-            }
-            header { padding-top: 40px; padding-bottom: 8px; }
-            h1, h2 {
-                font-weight: 600;
-                line-height: 1.25;
-                margin-top: 32px;
-                margin-bottom: 16px;
-            }
-            h1 { font-size: 2em; margin-top: 0; }
-            h2 { font-size: 1.5em; border-bottom: 1px solid var(--color-border-default); padding-bottom: 4px; }
-            p {
-                margin-top: 0;
-                margin-bottom: 16px;
-            }
-            a {
-                color: var(--color-accent-fg);
-                text-decoration: none;
-            }
-            a:hover { text-decoration: underline; }
-            footer {
-                font-size: 13px;
-                color: var(--color-fg-muted);
-                border-top: 1px solid var(--color-border-default);
-                margin-top: 48px;
-                text-align: center;
-            }
-            @media (max-width: 600px) {
-                header, main, footer { padding: 20px 16px; }
-            }
-        </style>
-    </head>
-    <body>
-        <nav class="global-nav" aria-label="Global site navigation">
-            <div class="global-nav-inner">
-                <a class="global-nav-link" href="/">Home</a>
-                <a class="global-nav-link" href="/about.html">About</a>
-                <a class="global-nav-link" href="/teaching.html">Teaching</a>
-                <a class="global-nav-link" href="/projects.html">Projects</a>
-                <a class="global-nav-link" href="/notes.html">Notes</a>
-            </div>
-        </nav>
-        <header>
-            <h1>Other Pages</h1>
-        </header>
-        <main>
-            <p>This space will host additional content (e.g., publications, talks, notes, or projects). Add sections here as they are developed.</p>
-            <h2>Planned Sections</h2>
-            <p>You can outline future areas or leave this as a placeholder until ready.</p>
-        </main>
-        <footer>
-            <p>&copy; 2025 Your Name. All rights reserved.</p>
-        </footer>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Additional Material</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+  <div data-site-nav></div>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <h1 class="site-title">Additional Material</h1>
+      <p class="site-tagline">Links and references that do not fit cleanly into the main navigation.</p>
+    </div>
+  </header>
+  <main class="site-main" id="content">
+    <p>This page collects supporting links that sit adjacent to the main site sections.</p>
+    <ul>
+      <li><a href="https://github.com/carbonatezero">GitHub profile</a> — Public repositories, experiments, and notes.</li>
+      <li><a href="https://github.com/carbonatezero/carbonatezero.github.io">Site source</a> — HTML, CSS, and supporting assets for this website.</li>
+      <li>Email: carbonate.zero [at] gmail [dot] com</li>
+    </ul>
+    <p>Additional material such as publications, talks, or a CV can be linked from here once those documents are ready to publish.</p>
+  </main>
+  <div data-site-footer></div>
+</body>
 </html>

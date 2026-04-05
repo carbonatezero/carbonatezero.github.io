@@ -2,32 +2,23 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Professional Homepage</title>
+  <title>Carbonate Zero</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/site.js" defer></script>
 </head>
-<body>
-  <nav class="global-nav" aria-label="Global site navigation">
-    <div class="global-nav-inner">
-      <a class="global-nav-link" href="/">Home</a>
-      <a class="global-nav-link" href="/about.html">About</a>
-      <a class="global-nav-link" href="/teaching.html">Teaching</a>
-      <a class="global-nav-link" href="/projects.html">Projects</a>
-      <a class="global-nav-link" href="/notes.html">Notes</a>
-    </div>
-  </nav>
+<body data-page="home">
+  <div data-site-nav></div>
   <header class="site-header">
     <div class="site-header-inner">
-      <h1 class="site-title">Welcome to My Professional Homepage</h1>
+      <h1 class="site-title">Carbonate Zero</h1>
+      <p class="site-tagline">Mathematics, teaching, and technical notes.</p>
     </div>
   </header>
   <main class="site-main" id="content">
-    <p>Welcome. This site is a concise hub for my professional profile. Use the navigation above to learn more about my background and work. Additional sections will be added soon.</p>
+    <p>I am a mathematician and educator working across analysis, probability, and partial differential equations. This site collects course materials, short notes, and selected software-oriented projects.</p>
+    <p>The teaching section contains course history and lecture notes. The notes section gathers concise references I actually use. Projects links point to public repositories and longer write-ups when they are ready for release.</p>
   </main>
-  <footer class="site-footer">
-    <div class="site-footer-inner">
-      <p class="small">&copy; 2025 carbonatezero. All rights reserved.</p>
-    </div>
-  </footer>
+  <div data-site-footer></div>
 </body>
 </html>

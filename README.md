@@ -1,2 +1,7 @@
 # carbonatezero.github.io
-homepage
+
+Static personal site for `carbonatezero`, built from plain HTML with shared assets in `assets/`.
+
+- Top-level pages are published directly from the repository root.
+- Shared site chrome is rendered by `assets/site.js`.
+- Shared visual styles live in `assets/styles.css`.

@@ -5,17 +5,10 @@
   <title>About</title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/site.js" defer></script>
 </head>
-<body>
-  <nav class="global-nav" aria-label="Global site navigation">
-    <div class="global-nav-inner">
-      <a class="global-nav-link" href="/">Home</a>
-      <a class="global-nav-link" href="/about.html">About</a>
-      <a class="global-nav-link" href="/teaching.html">Teaching</a>
-      <a class="global-nav-link" href="/projects.html">Projects</a>
-      <a class="global-nav-link" href="/notes.html">Notes</a>
-    </div>
-  </nav>
+<body data-page="about">
+  <div data-site-nav></div>
   <header class="site-header">
     <div class="site-header-inner">
       <h1 class="site-title">About</h1>
@@ -23,19 +16,15 @@
   </header>
 
   <main class="site-main" id="content">
-    <p>I am a mathematician with broad interests in both pure and applied mathematics. My doctoral research focused on partial differential equations, and my continuing interests include analysis, probability, and the foundations of mathematics.</p>
-    <p>I am also an educator with experience teaching both foundational undergraduate mathematics and advanced courses in analysis.</p>
+    <p>I am a mathematician with interests in analysis, probability, and the study of partial differential equations. My research background is in PDE, and I remain interested in both theoretical questions and computational perspectives that support them.</p>
+    <p>I also teach a wide range of undergraduate mathematics courses, from calculus and differential equations through linear algebra and analysis. This site serves as a compact home for teaching materials, working notes, and public code.</p>
 
     <h2>Contact</h2>
     <ul>
       <li>Email: carbonate.zero [at] gmail [dot] com</li>
+      <li>GitHub: <a href="https://github.com/carbonatezero">github.com/carbonatezero</a></li>
     </ul>
   </main>
-
-  <footer class="site-footer">
-    <div class="site-footer-inner">
-      <p class="small">&copy; 2025 carbonatezero. All rights reserved.</p>
-    </div>
-  </footer>
+  <div data-site-footer></div>
 </body>
 </html>

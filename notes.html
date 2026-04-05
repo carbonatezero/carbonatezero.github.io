@@ -5,33 +5,22 @@
   <title>Notes</title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/site.js" defer></script>
 </head>
-<body>
-  <nav class="global-nav" aria-label="Global site navigation">
-    <div class="global-nav-inner">
-      <a class="global-nav-link" href="/">Home</a>
-      <a class="global-nav-link" href="/about.html">About</a>
-      <a class="global-nav-link" href="/teaching.html">Teaching</a>
-      <a class="global-nav-link" href="/projects.html">Projects</a>
-      <a class="global-nav-link" href="/notes.html">Notes</a>
-    </div>
-  </nav>
+<body data-page="notes">
+  <div data-site-nav></div>
   <header class="site-header">
     <div class="site-header-inner">
       <h1 class="site-title">Notes</h1>
     </div>
   </header>
   <main class="site-main" id="content">
-    <p>A small collection of quick references and personal notes.</p>
+    <p>A small collection of practical notes, references, and short write-ups. These are meant to be compact, useful, and easy to revisit.</p>
     <ul>
-      <li><a href="notes/vim-linux.html">linux and vim</a> — Core navigation, editing, and productivity commands.</li>
-      <li><a href="https://github.com/carbonatezero/numpy.matplotlib.panda.101">numpy, matplotlib and panda</a></li>
+      <li><a href="notes/vim-linux.html">Vim and Linux quick reference</a> — Core navigation, editing, and command-line reminders.</li>
+      <li><a href="https://github.com/carbonatezero/numpy.matplotlib.panda.101">NumPy, Matplotlib, and pandas notes</a> — Python data and plotting exercises collected in a public repository.</li>
     </ul>
   </main>
-  <footer class="site-footer">
-    <div class="site-footer-inner">
-      <p class="small">&copy; 2025 carbonatezero. All rights reserved.</p>
-    </div>
-  </footer>
+  <div data-site-footer></div>
 </body>
 </html>

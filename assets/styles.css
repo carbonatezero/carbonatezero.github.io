@@ -50,6 +50,11 @@ body {
   color: var(--color-fg);
   font-weight: 600;
 }
+.global-nav-link[aria-current="page"] {
+  color: var(--color-accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 .global-nav-link:hover,
 .global-nav-link:focus {
   color: var(--color-accent);
@@ -87,25 +92,13 @@ footer.site-footer {
   line-height: 1.2;
   font-weight: 600;
 }
+.site-tagline {
+  margin: 0;
+  max-width: 42rem;
+  color: var(--color-fg-muted);
+  font-size: 1.05rem;
+}
 nav { margin-bottom: var(--space-2); }
-.site-nav {
-  list-style: none;
-  padding: 0;
-  margin: 0 0 var(--space-1);
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-4);
-}
-.site-nav li { margin: 0; padding: 0; }
-.site-nav a {
-  padding: var(--space-1) 0;
-  position: relative;
-}
-.site-nav a.nav-active {
-  font-weight: 600;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-}
 main.site-main { min-height: 40vh; }
 h1, h2, h3 {
   font-weight: 600;
@@ -182,5 +175,4 @@ ul {
   .site-title { font-size: 1.6rem; }
   h1 { font-size: 1.55rem; }
   .term { white-space: normal; }
-  .site-nav { gap: var(--space-3); }
 }

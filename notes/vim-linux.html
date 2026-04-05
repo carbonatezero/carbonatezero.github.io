@@ -5,6 +5,7 @@
   <title>Vim & Linux Quick Reference</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../assets/styles.css">
+  <script src="../assets/site.js" defer></script>
   <style>
     main { max-width: 900px; margin: 0 auto; padding: 1.5rem; }
     h1, h2, h3 { line-height: 1.2; }
@@ -18,16 +19,8 @@
     .muted { color: #6b7280; font-size: 0.95rem; }
   </style>
 </head>
-<body>
-  <nav class="global-nav" aria-label="Global site navigation">
-    <div class="global-nav-inner">
-      <a class="global-nav-link" href="/">Home</a>
-      <a class="global-nav-link" href="/about.html">About</a>
-      <a class="global-nav-link" href="/teaching.html">Teaching</a>
-      <a class="global-nav-link" href="/projects.html">Projects</a>
-      <a class="global-nav-link" href="/notes.html">Notes</a>
-    </div>
-  </nav>
+<body data-page="notes">
+  <div data-site-nav></div>
   <header class="site-header">
     <div class="site-header-inner">
       <h1 class="site-title">Notes</h1>
@@ -155,10 +148,6 @@
     </article>
   </main>
 
-  <footer class="site-footer">
-    <div class="site-footer-inner">
-      <p class="small">&copy; 2025 Your Name. All rights reserved.</p>
-    </div>
-  </footer>
+  <div data-site-footer></div>
 </body>
 </html>

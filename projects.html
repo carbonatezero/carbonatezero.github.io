@@ -5,17 +5,10 @@
   <title>Projects</title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/site.js" defer></script>
 </head>
-<body>
-  <nav class="global-nav" aria-label="Global site navigation">
-    <div class="global-nav-inner">
-      <a class="global-nav-link" href="/">Home</a>
-      <a class="global-nav-link" href="/about.html">About</a>
-      <a class="global-nav-link" href="/teaching.html">Teaching</a>
-      <a class="global-nav-link" href="/projects.html">Projects</a>
-      <a class="global-nav-link" href="/notes.html">Notes</a>
-    </div>
-  </nav>
+<body data-page="projects">
+  <div data-site-nav></div>
   <header class="site-header">
     <div class="site-header-inner">
       <h1 class="site-title">Projects</h1>
@@ -24,29 +17,20 @@
 
   <main class="site-main" id="content">
     <section class="section">
-      <h2>Research in Mathematics</h2>
-      <p>Selected work and code bases related to the analysis of partial differential equations and scientific computation.</p>
+      <h2>Public Repositories</h2>
+      <p>Public-facing code and notes currently live in a small set of repositories. I use this page to point to the ones that are maintained and ready to share.</p>
       <ul>
-        <li><a href="#">2D Rayleigh–Bénard Equations</a></li>
-        <li><a href="#">3D Ladyzhenskaya Equations</a></li>
-        <li><a href="#">2D Navier-Stokes Equations</a></li>
+        <li><a href="https://github.com/carbonatezero/carbonatezero.github.io">carbonatezero.github.io</a> — Source for this site.</li>
+        <li><a href="https://github.com/carbonatezero/numpy.matplotlib.panda.101">NumPy, Matplotlib, and pandas notes</a> — Working examples and lightweight data-analysis exercises.</li>
+        <li><a href="https://github.com/carbonatezero">GitHub profile</a> — Additional repositories, experiments, and smaller utilities.</li>
       </ul>
     </section>
 
     <section class="section">
-      <h2>Data Science and Algorithms</h2>
-      <p>Collaborative and independent projects in data science and algorithms.</p>
-      <ul>
-        <li><a href="#">Erdős Institute Data Science Project</a> — Collaborative applied data analysis with reproducible pipelines.</li>
-        <li><a href="#">Stanford Algorithms Specialization repo</a> — Implementations of classic divide &amp; conquer and graph algorithms.</li>
-      </ul>
+      <h2>Current Focus</h2>
+      <p>My public work is currently concentrated around mathematical analysis, teaching materials, and compact computational experiments. Longer research summaries and polished project pages will be added here only when they are ready for public release.</p>
     </section>
   </main>
-
-  <footer class="site-footer">
-    <div class="site-footer-inner">
-      <p class="small">&copy; 2025 carbonatezero. All rights reserved.</p>
-    </div>
-  </footer>
+  <div data-site-footer></div>
 </body>
 </html>
